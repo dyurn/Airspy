@@ -262,6 +262,8 @@ class NetworkScannerGUI(QMainWindow):
 
         wifi_layout.addWidget(self.wifi_tabs)
 
+        self.wifi_table.cellClicked.connect(self.on_wifi_clicked)
+
     def setup_other_tabs(self):
         for tab, name, headers in [
             (self.bluetooth_tab, "bluetooth", ["Name", "Address", "Signal"]),
