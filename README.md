@@ -39,11 +39,11 @@ pip install -r requirements.txt
 Run the tool with the desired options:
 
 ```bash
-python airspy.py -w        # Scan Wi-Fi
-python airspy.py -b        # Scan Bluetooth
-python airspy.py -f        # Scan radio (default 433.92 MHz)
-python airspy.py -d -a <BSSID> [-c <STATION>]  # Deauthentication attack
-python airspy.py --audit   # Full audit
+python Airspy.py -w        # Scan Wi-Fi
+python Airspy.py -b        # Scan Bluetooth
+python Airspy.py -f        # Scan radio (default 433.92 MHz)
+python Airspy.py -d -a <BSSID> [-c <STATION>]  # Deauthentication attack
+python Airspy.py --audit   # Full audit
 python AirspyGUI.py        # Launch graphical interface
 ```
 
@@ -68,25 +68,25 @@ python AirspyGUI.py        # Launch graphical interface
 ### **Wi-Fi Scan**
 
 ```bash
-python airspy.py -w --filter-ssid "MyNetwork" --min-signal -50
+python Airspy.py -w --filter-ssid "MyNetwork" --min-signal -50
 ```
 
 ### **Bluetooth Scan**
 
 ```bash
-python airspy.py -b -T 15
+python Airspy.py -b -T 15
 ```
 
 ### **Live Radio Scan on 868 MHz**
 
 ```bash
-python airspy.py -f 868M --live-sdr
+python Airspy.py -f 868M --live-sdr
 ```
 
 ### **Complete Audit**
 
 ```bash
-python airspy.py --audit
+python Airspy.py --audit
 ```
 
 ### **Launching the GUI**
